@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+<title>Return Stuck Troops</title>
+<script src="scripts/functions.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+	<p> Saved time and nerves by using this simple Tool? Feel free to buy me a coffee!<br>
+		<b>ETH/Matic: 0x8F36b298151E8897E771a11ec130f5D5C5b77Fe2</b></p>
+	<p>You can have a look at the sites code - your X-Access-Code wont be stored anywhere. All this does is return a list of all troop queues on the field. <br>
+		By pressing the "Return Troops" Button you can return bugged queues.<br>
+		You can find the source code on <a href="https://github.com/theTiger2020/LoK-UnstuckTroops">Github</a>. <br>
+		If you have any doubts you can contact me on Discord: Tiger2020#9964</p>
+
+
+	<p><b>How to use:</b><br>
+	<ul>
+		<li>Enter your X-Access-Token</li>
+		<li>Press the "Field Troops"-Button</li>
+		<li>Identify which Queue is stuck</li>
+		<li>Press the "Recall Troops"-Button</li>
+		<li>Save days of struggle with LoK-Support (:</li>
+	</ul>
+	</p>
+     <h1><u><a>Return Stuck Troops</a></u></h1>
+	<p><input type="text" placeholder="X-Access-Token" id="x-access-token">X-Access-Token (has to be valid - otherwhise nothing happens)</p>
+    <p>
+        <button type="button" onclick="getFieldTroops()">Field Troops</button>
+	</p>
+
+	<div id="table">
+		<table id="table2">
+			<thead>
+				<tr>
+					<th>Loc</th>
+					<th>Mo ID</th>
+                    <th> Endtime (Servertime)</th>
+                    <th>Recall BTN</th>
+                    <th>Result</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+    </div>
+</body>
+</html>
